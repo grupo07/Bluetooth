@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:transitionGroup="true"
+    tools:context="gr7.compumovil.udea.edu.co.bluetooth.MainActivity">
+
+    <TextView android:text="Bluetooth Example" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview1"
+        android:textSize="35dp"
+        android:textColor="#2196F3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GRUPO07"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textview1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2196F3"
+        android:textSize="35dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/men"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/Base.TextAppearance.AppCompat" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encender"
+        android:id="@+id/Prender"
+        android:layout_below="@id/imageView"
+        android:clickable="true"
+        android:onClick="encender" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista dispositivos"
+        android:onClick="lista"
+        android:id="@+id/lista"
+        android:layout_below="@+id/visible"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apagar"
+        android:onClick="apagar"
+        android:id="@+id/apagar"
+        android:layout_below="@+id/Prender"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visibilidad"
+        android:onClick="visible"
+        android:id="@+id/visible"
+        android:layout_below="@id/apagar" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dispositivos vinculados:"
+        android:layout_below="@id/lista"
+        android:id="@+id/textView2"
+        android:textColor="#2196F3"
+        android:textSize="25dp"
+         />
+</RelativeLayout>
